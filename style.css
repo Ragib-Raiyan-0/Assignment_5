@@ -1,4 +1,4 @@
-/* ========== Reset ========== */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   color: #222;
 }
 
-/* ========== Navbar ========== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap; 
 }
 
 .navbar .logo {
@@ -76,7 +76,7 @@ body {
   background: #088a2f;
 }
 
-/* ========== Hero Section ========== */
+
 .hero {
   text-align: center;
   background: linear-gradient(90deg, #004d2a, #008a4c);

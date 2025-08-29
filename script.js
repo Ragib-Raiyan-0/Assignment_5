@@ -2,16 +2,15 @@ let heartCount = 0;
 let coinCount = 100;
 let copyCount = 0;
 
-// Navbar counters
 const heartCounter = document.getElementById("heart-count");
 const coinCounter = document.getElementById("coin-count");
 const copyCounter = document.getElementById("copy-count");
 
-// Call history
+
 const callList = document.getElementById("call-list");
 const clearBtn = document.querySelector(".clear");
 
-// ❤️ Heart click
+
 document.querySelectorAll(".heart").forEach(btn => {
     btn.addEventListener("click", () => {
         if (btn.textContent === "🤍") {
@@ -27,7 +26,7 @@ document.querySelectorAll(".heart").forEach(btn => {
 
 
 
-// 📋 Copy button
+
 document.querySelectorAll(".copy").forEach(btn => {
     btn.addEventListener("click", (e) => {
         const card = e.target.closest(".card");
@@ -41,7 +40,7 @@ document.querySelectorAll(".copy").forEach(btn => {
     });
 });
 
-// 📞 Call button
+
 document.querySelectorAll(".call").forEach(btn => {
     btn.addEventListener("click", (e) => {
         const card = e.target.closest(".card");
@@ -54,11 +53,10 @@ document.querySelectorAll(".call").forEach(btn => {
         }
 
         coinCount -= 20;
-        coinCounter.textContent = `${coinCount} ⭐`;
+        coinCounter.textContent = `${coinCount} 🪙`;
 
         alert(`Calling ${name} at ${number}...`);
 
-        // Add to history with timestamp
         const now = new Date();
         const time = now.toLocaleTimeString();
 
@@ -77,7 +75,6 @@ document.querySelectorAll(".call").forEach(btn => {
     });
 });
 
-// 🗑️ Clear history
 clearBtn.addEventListener("click", () => {
     callList.innerHTML = "";
 });
