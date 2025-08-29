@@ -69,7 +69,6 @@ document.querySelectorAll(".call").forEach(btn => {
               <div class="service-name">${name}</div>
               <div class="service-number">${number}</div>
             </div>
-            <p>Hello world!</p>
             <div class="history-time">${time}</div>
           </div>
         `;
