@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="B12-A5-Emergency-Hotline/assets/logo.png" alt="Logo">
+            <span>Emergency Service</span>
+        </div>
+        <div class="nav-right">
+            <div id="heart-count">0 ❤️</div>
+            <div id="coin-count">100 ⭐</div>
+            <div id="copy-count">0 📋</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="B12-A5-Emergency-Hotline/assets/logo-dark.png" alt="BD Logo">
+        <h1>Emergency Service Directory</h1>
+        <p>Government Emergency Services at Your Fingertip - A Project by Government of the People’s Republic of
+            Bangladesh</p>
+    </section>
+
+    <!-- Main Section -->
+    <main class="container">
+        <!-- Service Cards -->
+        <div class="cards">
+            <div class="card" data-name="National Emergency Number" data-number="999">
+                <div class="card-head">
+                    <img src="B12-A5-Emergency-Hotline/assets/emergency.png" alt="Emergency">
+                    <button class="heart">❤️</button>
+                </div>
+                <h3>National Emergency Number</h3>
+                <p>National Emergency</p>
+                <h2>999</h2>
+                <span class="tag">All</span>
+                <div class="card-actions">
+                    <button class="copy">📋 Copy</button>
+                    <button class="call">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Police -->
+            <div class="card" data-name="Police Helpline" data-number="999">
+                <div class="card-head">
+                    <img src="B12-A5-Emergency-Hotline/assets/police.png" alt="Police">
+                    <button class="heart">❤️</button>
+                </div>
+                <h3>Police Helpline</h3>
+                <p>Police</p>
+                <h2>999</h2>
+                <span class="tag">Police</span>
+                <div class="card-actions">
+                    <button class="copy">📋 Copy</button>
+                    <button class="call">📞 Call</button>
+                </div>
+            </div>
+
+            
+            <div class="card" data-name="Fire Service" data-number="999">
+                <div class="card-head">
+                    <img src="B12-A5-Emergency-Hotline/assets/fire-service.png" alt="Fire">
+                    <button class="heart">❤️</button>
+                </div>
+                <h3>Fire Service</h3>
+                <p>Fire Service</p>
+                <h2>999</h2>
+                <span class="tag">Fire</span>
+                <div class="card-actions">
+                    <button class="copy">📋 Copy</button>
+                    <button class="call">📞 Call</button>
+                </div>
+            </div>
+
+            
+            <div class="card" data-name="Ambulance Service" data-number="1994-999999">
+                <div class="card-head">
+                    <img src="B12-A5-Emergency-Hotline/assets/ambulance.png" alt="Ambulance">
+                    <button class="heart">❤️</button>
+                </div>
+                <h3>Ambulance Service</h3>
+                <p>Ambulance</p>
+                <h2>1994-999999</h2>
+                <span class="tag">Health</span>
+                <div class="card-actions">
+                    <button class="copy">📋 Copy</button>
+                    <button class="call">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Women & Child -->
+            <div class="card" data-name="Women & Child Helpline" data-number="109">
+                <div class="card-head">
+                    <img src="B12-A5-Emergency-Hotline/assets/women.png" alt="Women">
+                    <button class="heart">💗</button>
+                </div>
+                <h3>Women & Child Helpline</h3>
+                <p>Women & Child</p>
+                <h2>109</h2>
+                <span class="tag">Help</span>
+                <div class="card-actions">
+                    <button class="copy">📋 Copy</button>
+                    <button class="call">📞 Call</button>
+                </div>
+            </div>
+
+            <!-- Anti-Corruption -->
+            <div class="card" data-name="Anti-Corruption Helpline" data-number="106">
+                <div class="card-head">
+                    <img src="B12-A5-Emergency-Hotline/assets/anti-corruption.png" alt="Anti-Corruption">
+                    <button class="heart">💗</button>
+                </div>
+                <h3>Anti-Corruption Helpline</h3>
+                <p>Anti-Corruption</p>
+                <h2>106</h2>
+                <span class="tag">Govt.</span>
+                <div class="card-actions">
+                    <button class="copy">📋 Copy</button>
+                    <button class="call">📞 Call</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Side: Call History -->
+        <aside class="history">
+            <div class="history-header">
+                <h3>📞 Call History</h3>
+                <button class="clear">Clear</button>
+            </div>
+            <ul id="call-list"></ul>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
