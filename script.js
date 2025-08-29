@@ -14,10 +14,18 @@ const clearBtn = document.querySelector(".clear");
 // ❤️ Heart click
 document.querySelectorAll(".heart").forEach(btn => {
     btn.addEventListener("click", () => {
-        heartCount++;
+        if (btn.textContent === "🤍") {
+            btn.textContent = "❤️";
+            heartCount++;
+        } else {
+            btn.textContent = "🤍";
+            heartCount--;
+        }
         heartCounter.textContent = `${heartCount} ❤️`;
     });
 });
+
+
 
 // 📋 Copy button
 document.querySelectorAll(".copy").forEach(btn => {
@@ -61,6 +69,7 @@ document.querySelectorAll(".call").forEach(btn => {
               <div class="service-name">${name}</div>
               <div class="service-number">${number}</div>
             </div>
+            <p>Hello world!</p>
             <div class="history-time">${time}</div>
           </div>
         `;

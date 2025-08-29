@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -181,8 +183,13 @@ body {
 .heart {
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
+  color: white; /* default empty heart */
+}
+
+.heart.active-heart {
+  color: red; /* clicked heart */
 }
 
 /*  Call History  */
