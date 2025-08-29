@@ -35,7 +35,7 @@ document.querySelectorAll(".copy").forEach(btn => {
 
         navigator.clipboard.writeText(number).then(() => {
             copyCount++;
-            copyCounter.textContent = `${copyCount} 📋`;
+            copyCounter.textContent = `${copyCount} Copy`;
             alert(`Copied: ${number}`);
         });
     });
